@@ -1,5 +1,8 @@
 import streamlit as st
+import pandas as pd
 
-st.title('🎈 App Name')
+st.title('🎈 Machine Learning App')
+st.info('This is an app built for machine learning')
 
-st.write('Hello world!')
+df = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/penguins_cleaned.csv")
+df
